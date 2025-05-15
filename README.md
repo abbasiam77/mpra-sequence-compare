@@ -5,20 +5,21 @@ This Python tool compares two FASTA files typically used in MPRA (Massively Para
 - A **reference sequence FASTA file** (original sequences without adaptors)
 - An **MPRA sequence FASTA file** (with adaptors attached)
 
-The tool automatically detects adaptor sequences added to the MPRA sequences and reports:
+The tool automatically detects adaptor sequences added to the MPRA sequences and generates a detailed comparison report that includes:
 
-- The detected adaptor sequences (forward and reverse)
+- Detected adaptor sequences (forward and reverse)
 - Total mismatches and insertions/deletions excluding adaptor regions
 - Number of sequences containing adaptor ends
+- Summary statistics useful for quality control in MPRA experiments
 
 ---
 
 ## Features
 
 - Automatic adaptor detection based on longest common prefixes and suffixes
-- Detailed mismatch and indel counts excluding adaptors
-- Command-line or Jupyter Notebook usage friendly
-- Written in Python using Biopython
+- Accurate mismatch and indel counts, excluding adaptor regions
+- Supports usage both as a standalone Python script and inside Jupyter notebooks
+- Built using Python and Biopython for reliable sequence handling
 
 ---
 
